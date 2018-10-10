@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601c8ffcf1c1fe84ea8ea733648736b3, type: 3}
+  m_Name: Room Node
+  m_EditorClassIdentifier: 
+  WindowRect:
+    serializedVersion: 2
+    x: 518
+    y: 311
+    width: 215
+    height: 256
+  hasInputs: 1
+  windowTitle: Room Node
+  RoomName: Room
+  DirectAngle: 
+  RoomLocation: {x: 2, y: 0, z: 0}
+  RoomTexture: {fileID: 2800000, guid: d247a5a261f5b904c9fb6c10eba79882, type: 3}
+  ParentRoomNodes:
+  - {fileID: 11400000, guid: a2efc73bb1b91624c90bdf21f0af0d7a, type: 2}
+  ChildRooms:
+  - {fileID: 11400000, guid: c76ba096d1cd5c7448eee470b5058399, type: 2}
