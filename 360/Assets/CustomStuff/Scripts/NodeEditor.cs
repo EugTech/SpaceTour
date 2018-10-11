@@ -230,9 +230,16 @@ public class NodeEditor : EditorWindow
             Repaint();
         }
 
-        foreach (BaseNode n in windows)
+        try
         {
-            n.DrawCurves();
+            foreach (BaseNode n in windows)
+            {
+                n.DrawCurves();
+            }
+        }
+        catch (System.Exception A)
+        {
+            Debug.LogError(A);
         }
 
         BeginWindows();
