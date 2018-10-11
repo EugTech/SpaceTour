@@ -13,15 +13,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WindowRect:
     serializedVersion: 2
-    x: 175
-    y: 110
+    x: 92
+    y: 102
     width: 215
-    height: 219
+    height: 256
   hasInputs: 1
   windowTitle: front door
   RoomName: front door
   DirectAngle: 
   RoomLocation: {x: 0, y: 0, z: 0}
   RoomTexture: {fileID: 2800000, guid: a677c134154698c44b49ddf8dbf82d52, type: 3}
-  ParentRoomNodes: []
-  ChildRooms: []
+  ParentRoomNodes:
+  - {fileID: 11400000, guid: 773d99b13cddcd345a6af30d95232b12, type: 2}
+  ChildRooms:
+  - {fileID: 11400000, guid: 773d99b13cddcd345a6af30d95232b12, type: 2}

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WindowRect:
     serializedVersion: 2
-    x: 746
-    y: 188
+    x: 686
+    y: 98
     width: 215
-    height: 256
+    height: 274
   hasInputs: 1
   windowTitle: front desk
   RoomName: front desk
