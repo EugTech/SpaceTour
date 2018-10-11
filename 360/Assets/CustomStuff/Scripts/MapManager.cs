@@ -21,7 +21,7 @@ public class MapManager : MonoBehaviour {
     private void Start()
     {
         rend = GetComponent<Renderer>();
-        Size = (transform.localScale.x /2f) * 0.7f ;
+        //Size = (transform.localScale.x /2f) * 0.7f ;
 
         if (Map != null)
         {
@@ -46,11 +46,11 @@ public class MapManager : MonoBehaviour {
 
                     if(ans.magnitude <= 0)
                     {
-                        ans = ans.normalized * Size;
+                        ans = Vector3.forward * Size;
                     }
                     else
                     {
-                        ans = Vector3.forward * Size;
+                        ans = ans.normalized * Size;
                     }
 
                     return ans;
@@ -109,7 +109,8 @@ public class MapManager : MonoBehaviour {
         {
             return;
         }
-        GameObject Spawn = Instantiate(ButtonPrefab, spawnLoc, Quaternion.LookRotation(spawnLoc,Vector3.up), null);
+        GameObject Spawn = Instantiate(ButtonPrefab, spawnLoc, Quaternion.identity, null);
+        Spawn.transform.rotation = Quaternion.LookRotation(-transform.position + Spawn.transform.position, Vector3.up);
         NavButton SpawnedNav = Spawn.GetComponent<NavButton>();
         SpawnedNav.RoomID = id;
         SpawnedNav.ParentManager = this;

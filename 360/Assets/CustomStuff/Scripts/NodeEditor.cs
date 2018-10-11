@@ -232,7 +232,7 @@ public class NodeEditor : EditorWindow
 
         try
         {
-            foreach (BaseNode n in windows)
+            foreach (RoomNode n in windows)
             {
                 n.DrawCurves();
             }
