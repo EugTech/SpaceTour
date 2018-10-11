@@ -1651,8 +1651,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1454607836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.49, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ce2862fc85fa7449113da770fea636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Map: {fileID: 11400000, guid: c5d74f1aafada9d4e9fdc7d13eceb7f6, type: 2}
+  Map: {fileID: 11400000, guid: c5255b5f2c4954444979e6a14cfaadff, type: 2}
   Size: 20
   CurrentRoom: 0
   ChildRend: {fileID: 1454607838}

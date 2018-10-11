@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b88556399d59fa45b1442d9e9a25574, type: 3}
+  m_Name: cbthq
+  m_EditorClassIdentifier: 
+  rooms:
+  - {fileID: 11400000, guid: 4705045e2e9e8744aa1aee0c15e4c143, type: 2}
+  - {fileID: 11400000, guid: 773d99b13cddcd345a6af30d95232b12, type: 2}
+  - {fileID: 11400000, guid: f6d858351f806134d998090ca9d1d0f6, type: 2}
+  StartingRoom: 0
