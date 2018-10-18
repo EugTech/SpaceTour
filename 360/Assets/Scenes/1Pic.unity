@@ -1008,6 +1008,7 @@ MonoBehaviour:
   ChildRend: {fileID: 1454607838}
   ButtonPrefab: {fileID: 1708214546989690, guid: ddfc9e10584e78d40be365172d2fe09f,
     type: 2}
+  Viewer: {fileID: 959308587}
 --- !u!1 &1725746395 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1251124450334416, guid: c12db6ac95da443448d6aa9e4cfc66c0,

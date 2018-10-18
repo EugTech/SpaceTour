@@ -39,7 +39,7 @@ public class NavButton : MonoBehaviour {
     public void SetSizeOnView(Vector3 ViewDir)
     {
         float Angle = Vector3.Angle(transform.position, ViewDir);
-
+        Debug.Log(Angle.ToString());
         if(Angle < MaxAngle)
         {
             transform.localScale = OGSize * (1f + (MaxScale - 1f) * ((MaxAngle - Angle) / MaxAngle));

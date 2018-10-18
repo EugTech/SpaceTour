@@ -18,6 +18,8 @@ public class MapManager : MonoBehaviour {
 
     private bool Switching = false;
 
+    public GameObject Viewer = null;
+
     private void Start()
     {
         rend = GetComponent<Renderer>();
@@ -30,6 +32,17 @@ public class MapManager : MonoBehaviour {
 
         StartCoroutine(ISpawnRoom());
         Debug.Log("Start");
+    }
+
+    private void Update()
+    {
+        if(Viewer != null)
+        {
+            foreach(GameObject go in SpawnedRoomButtons)
+            {
+                go.GetComponent<NavButton>().SetSizeOnView(Viewer.transform.forward);
+            }
+        }
     }
 
     public Vector3 GetRoomDirectionalPosition(int childId)
@@ -114,6 +127,7 @@ public class MapManager : MonoBehaviour {
         NavButton SpawnedNav = Spawn.GetComponent<NavButton>();
         SpawnedNav.RoomID = id;
         SpawnedNav.ParentManager = this;
+        SpawnedRoomButtons.Add(Spawn);
     }
 
     public void SwitchRooms(int DirtyID)
